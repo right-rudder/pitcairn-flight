@@ -55,14 +55,14 @@
     <meta property="og:url" content="<%= request.original_url %>">
     <meta property="og:title" content="<%= if content_for?(:title) then yield(:title) else 'Pitcairn Flight - Pilot Training by Reading and Philadelphia' end %>">
     <meta property="og:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'Become a pilot at Pitcairn Flight.  Offering programs to get your private all the way to CFI.' end %>">
-    <meta property="og:image" content="<%= if content_for?(:og_image) then yield(:og_image) else image_url('/pitcairn-flight-logo-vertical-800-white.webp') end %>">
+    <meta property="og:image" content="<%= if content_for?(:og_image) then yield(:og_image) else image_url('/OG_image-Pitcairn-flight.webp') end %>">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="<%= request.original_url %>">
     <meta property="twitter:title" content="<%= if content_for?(:title) then yield(:title) else "Pitcairn Flight - Pilot Training by Reading and Philadelphia" end %>">
     <meta property="twitter:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'Become a pilot at Pitcairn Flight.  Offering programs to get your private all the way to CFI.' end %>">
-    <meta property="twitter:image" content="<%= if content_for?(:twitter_image) then yield(:twitter_image) else image_url('/pitcairn-flight-logo-vertical-800-white.webp') end %>">
+    <meta property="twitter:image" content="<%= if content_for?(:twitter_image) then yield(:twitter_image) else image_url('/OG_image-Pitcairn-flight.webp') end %>">
 
     <!--CSS-->
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
