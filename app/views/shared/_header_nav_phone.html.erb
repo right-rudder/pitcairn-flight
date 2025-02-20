@@ -2,14 +2,14 @@
   <div class="hidden lg:block hover:scale-105 duration-300" >
     <%= link_to "CONTACT US", contact_path, data: { turbo: false }, class: "border rounded-xl border-white hover:border-teal-400 px-2 py-1 transition duration-300 font-light"%>
   </div>
-  <div class="pb-5 lg:pb-0">
+  <div class="h-20 lg:h-14 w-auto">
     <%= link_to root_path, data: { turbo: false } do %>
-      <%= image_tag "pitcairn-logo-400-white.webp", alt: "Pitcairn Flight Academy LLC logo", class: "w-64 pt-5 lg:pt-0 lg:block hidden"%>
-      <%= image_tag "pitcairn-logo-250-vertical-white.svg", alt: "Pitcairn Flight Academy LLC logo", class: "w-64 pt-5 lg:pt-0 lg:hidden"%>
+      <%= image_tag "pitcairn-flight-academy-logo-white.png", alt: "Pitcairn Flight Academy LLC logo", class: "object-contain w-full h-full lg:block hidden"%>
+      <%= image_tag "pitcairn-flight-academy-logo-white.png", alt: "Pitcairn Flight Academy LLC logo", class: "object-contain w-full h-full mt-2 lg:hidden"%>
       
     <% end %>
   </div>
-  <div class="lg:mt-0 mt-5 text-3xl lg:text-xl font-light">
+  <div class="lg:mt-0 mt-5 text-2xl lg:text-xl font-light">
     <%= link_to "(610) 495-7000", "tel:1-610-495-7000", class: "hover:underline hover:text-teal-300 duration-300" %>
   </div>
   <div class="text-neutral-900 text-xs absolute z-0 overflow-hidden -left-[100rem]">
