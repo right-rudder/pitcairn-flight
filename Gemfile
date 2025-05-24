@@ -7,7 +7,7 @@ ruby "3.1.2"
 gem "rails", "~> 7.0.4"
 
 # Needed for Rails 7.0.4 on MacOS > 15
-# gem 'nio4r', '~> 2.7', '>= 2.7.4'
+gem 'nio4r', '~> 2.7', '>= 2.7.4'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
