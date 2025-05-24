@@ -8,7 +8,7 @@ x-data="{ atTop: false }"
         :class="{ '-translate-x-[23vw] 2xl:-translate-x-[28vw]': atTop, '-translate-x-[50vw]': !atTop}"
         @scroll.window="atTop = (window.pageYOffset < 10 ) ? false: true"
         x-data="{ open: false }">
-        <%= image_tag "pitcairn-flight-academy-logo-white.png", class: "h-full object-contain"%>
+        <%= image_tag "Pitcairn-FS-Typography-Logo-2", class: "h-full w-auto invert object-contain"%>
     </div>
   <% end %>
   <!--JS for drops-->
@@ -248,7 +248,7 @@ x-data="{ atTop: false }"
           :class="{ '-translate-x-[0%] ': atTop, '-translate-x-[60rem]': !atTop}"
           @scroll.window="atTop = (window.pageYOffset < 260) ? false: true"
           x-data="{ open: false }">
-          <%= image_tag "pitcairn-flight-academy-logo-white.png", class: "w-full h-full object-contain"%>
+          <%= image_tag "Pitcairn-FS-Typography-Logo-2.png", class: "w-full invert h-full object-contain"%>
       </div>
     <% end %>
 
