@@ -245,7 +245,7 @@ x-data="{ atTop: false }"
     <%=link_to root_path do%>
       <div class="lg:hidden mr-5 h-12 w-auto -translate-x-[60rem] absolute
           top-1 transition duration-500 ease-in-out"
-          :class="{ '-translate-x-[5rem] ': atTop, '-translate-x-[60rem]': !atTop}"
+          :class="{ '-translate-x-[0%] ': atTop, '-translate-x-[60rem]': !atTop}"
           @scroll.window="atTop = (window.pageYOffset < 260) ? false: true"
           x-data="{ open: false }">
           <%= image_tag "pitcairn-flight-academy-logo-white.png", class: "w-full h-full object-contain"%>
