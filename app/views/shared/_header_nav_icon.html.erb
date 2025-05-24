@@ -8,7 +8,7 @@ x-data="{ atTop: false }"
         :class="{ '-translate-x-[23vw] 2xl:-translate-x-[28vw]': atTop, '-translate-x-[50vw]': !atTop}"
         @scroll.window="atTop = (window.pageYOffset < 10 ) ? false: true"
         x-data="{ open: false }">
-        <%= image_tag "Pitcairn-FS-Typography-Logo-2", class: "h-full w-auto invert object-contain"%>
+        <%= image_tag "Pitcairn-FS-Typography-Logo-2.png", class: "h-full w-auto invert object-contain"%>
     </div>
   <% end %>
   <!--JS for drops-->
