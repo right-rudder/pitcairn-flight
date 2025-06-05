@@ -4,4 +4,4 @@
 User-agent: *
 Disallow: /admins
 
-Sitemap: https://simpliflyco.com/sitemap.xml.gz
+Sitemap: https://pitcairnflightacademy.com/sitemap.xml.gz
