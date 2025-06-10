@@ -1,6 +1,7 @@
 class Enrollment < ApplicationRecord
   before_validation :strip_phone_number
   after_save :to_ghl
+  after_save :to_portal
 
   validates :first_name, presence: true
   validates :last_name, presence: true
@@ -27,5 +28,26 @@ class Enrollment < ApplicationRecord
       "alternate_availability" => "#{self.alternate_availability}",
     }
     HTTParty.post(ghl_url, body: ghl_payload.to_json, headers: { "Content-Type" => "application/json" })
+  end
+
+  def to_portal
+    portal_url = "https://portal.rightruddermarketing.com/api/leads"
+    api_key = ENV['PORTAL_API_KEY']
+    portal_payload = {
+      "first_name": "#{self.first_name}",
+      "last_name": "#{self.last_name}",
+      "email": "#{self.email}",
+      "phone": "#{self.phone}",
+      "campaign": "enrollment",
+      "account_random_id": "ac_h1zhallf",
+      "metadata": {
+        "goals": "#{self.goals}",
+        "previous_training": "#{self.previous_training}",
+        "preferred_date": "#{self.preferred_date} #{self.preferred_availability}",
+        "alternate_date": "#{self.alternate_date} #{self.alternate_availability}",
+        "comments": "#{self.comments}"
+      }
+    }     
+    HTTParty.post(portal_url, body: portal_payload.to_json, headers: { "Content-Type": "application/json", "X-API-Key": api_key })
   end
 end
