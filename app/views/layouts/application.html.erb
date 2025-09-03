@@ -171,10 +171,38 @@
       </script>
 
     <%end%>
-    <script 
-      src="https://widgets.leadconnectorhq.com/loader.js"  
-      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
-      data-widget-id="66b253b992c831a377b2c168"  > 
+    <div
+      id="chat-widget-placeholder"
+      data-chat-widget
+      data-widget-id="66b253b992c831a377b2c168"
+      data-location-id="ExW55QTIF52ZFb4Kjnmf"
+    >
+    </div>
+    <script type="module">
+      let chatLoaded = false;
+
+      function loadChatWidget() {
+        if (chatLoaded) return;
+        chatLoaded = true;
+
+        const script = document.createElement("script");
+        script.src = "https://beta.leadconnectorhq.com/loader.js";
+        script.setAttribute(
+          "data-resources-url",
+          "https://beta.leadconnectorhq.com/chat-widget/loader.js",
+        );
+        script.setAttribute("data-widget-id", "66b253b992c831a377b2c168");
+        document.body.appendChild(script);
+      }
+
+      function onScrollLoadChat() {
+        if (window.scrollY > 100) {
+          // Customize scroll threshold here
+          loadChatWidget();
+          window.removeEventListener("scroll", onScrollLoadChat);
+        }
+      }
+      window.addEventListener("scroll", onScrollLoadChat, { passive: true });
     </script>
   </body>
 </html>
