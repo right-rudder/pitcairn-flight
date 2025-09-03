@@ -1,7 +1,8 @@
 <%= render "shared/header"%>
 
-<header class="flex relative flex-col justify-center w-full bg-home h-screen-3/4 lg:h-screen-4/5 bg-center bg-fixed bg-cover px-10 -mt-16 lg:-mt-14 overflow-hidden">
+<header class="flex relative flex-col justify-center w-full h-screen-3/4 lg:h-screen-4/5 bg-center bg-fixed bg-cover px-10 -mt-16 lg:-mt-14 overflow-hidden">
   <div class="absolute bg-gray-900/30 w-full h-full inset-0 -z-0"></div>
+  <%= image_tag "pitcairn-heritage-field-fly-in.webp", alt: "Pitcairn Heritage Field Fly-In", class: "absolute -z-10 h-full w-full inset-0 object-cover", loading: "eager", fetchpriority: "high" %>
   <div class="flex flex-col items-center justify-center z-10">
     <h1 class="lg:text-6xl text-3xl font-header font-semibold text-center text-white">PILOT TRAINING IN POTTSTOWN HERITAGE FIELD</h1>
     <h2 class="lg:text-3xl text-xl italic font-semibold py-5 text-center text-white lg:block hidden">Your Flight School by Northwest Philadelphia and Reading</h2>

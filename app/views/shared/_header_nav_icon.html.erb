@@ -248,7 +248,7 @@ x-data="{ atTop: false }"
           :class="{ '-translate-x-[0%] ': atTop, '-translate-x-[60rem]': !atTop}"
           @scroll.window="atTop = (window.pageYOffset < 260) ? false: true"
           x-data="{ open: false }">
-          <%= image_tag "Pitcairn-FS-Typography-Logo-2.png", class: "w-full invert h-full object-contain", alt: "Pitcairn Flight Academy Logo" %>
+          <%= image_tag "Pitcairn-FS-Typography-Logo-2.png", class: "w-full invert h-full object-contain", alt: "Pitcairn Flight Academy Logo", loading: "lazy" %>
       </div>
     <% end %>
 
