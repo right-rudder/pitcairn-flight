@@ -29,7 +29,7 @@
     <%= link_to pilot_training_path, data: { turbo: false } do%>
       <div class="flex flex-col items-center">
         <div class="w-72 h-72 overflow-hidden">
-          <%= image_tag "pitcairn-flight-cfi-fly-with-student.webp", class: "w-full h-full object-cover hover:scale-105 duration-300", alt: "CFI at Pitcairn Flight Academy with Student"%>
+          <%= image_tag "pitcairn-flight-cfi-fly-with-student.webp", class: "w-full h-full object-cover hover:scale-105 duration-300", alt: "CFI at Pitcairn Flight Academy with Student", loading: "lazy" %>
         </div>
         <div class="font-header uppercase mt-5 text-2xl">
           How to start flying
@@ -39,7 +39,7 @@
     <%= link_to private_pilot_path, data: { turbo: false } do%>
       <div class="flex flex-col items-center">
         <div class="w-72 h-72 overflow-hidden">
-          <%= image_tag "student-passes-private-pilot-checkride-at-pitcairn-aviation.webp", class: "w-full h-full object-cover hover:scale-105 duration-300", alt: "student passes private pilot checkride at pitcairn aviation"%>
+          <%= image_tag "student-passes-private-pilot-checkride-at-pitcairn-aviation.webp", class: "w-full h-full object-cover hover:scale-105 duration-300", alt: "student passes private pilot checkride at pitcairn aviation", loading: "lazy" %>
         </div>
         <div class="font-header uppercase mt-5 text-2xl">
           Private Pilot
@@ -49,7 +49,7 @@
     <%= link_to rentals_path, data: { turbo: false } do%>
       <div class="flex flex-col items-center">
         <div class="w-72 h-72 overflow-hidden">
-          <%= image_tag "aircraft-rentals-at-pitcairn-flight-academy.webp", class: "w-full h-full object-cover hover:scale-105 duration-300", alt: "Cessna airplanes on the ramp at Pitcairn Flight Academy available for rent"%>
+          <%= image_tag "aircraft-rentals-at-pitcairn-flight-academy.webp", class: "w-full h-full object-cover hover:scale-105 duration-300", alt: "Cessna airplanes on the ramp at Pitcairn Flight Academy available for rent", loading: "lazy" %>
         </div>
         <div class="font-header uppercase mt-5 text-2xl">
           Aircraft Rentals
@@ -60,7 +60,7 @@
 
   <!--bg image-->
   <div class="absolute hidden lg:block z-0">
-    <%= image_tag "pitcairn-flight-academy-logo-white.png", alt: "logo backdrop", class: "h-[84vh] z-0 opacity-30"%> 
+    <%= image_tag "pitcairn-flight-academy-logo-white.png", alt: "logo backdrop", class: "h-[84vh] z-0 opacity-30", loading: "lazy" %> 
   </div>
 </section>
 
@@ -83,7 +83,7 @@
 
   <div class="flex flex-col lg:flex-row">
     <div class="lg:w-1/2 flex flex-col items-center justify-center">
-      <%= image_tag "pitcairn-flight-group-of-instructors.webp", class: "lg:w-4/5 w-full lg:rounded-2xl", alt: "Penn Airways Building Front"%>
+      <%= image_tag "pitcairn-flight-group-of-instructors.webp", class: "lg:w-4/5 w-full lg:rounded-2xl", alt: "Penn Airways Building Front", loading: "lazy" %>
     </div>
     <div class="lg:w-1/2 flex flex-col items-center">
       <div class="max-w-xl px-5">
@@ -114,7 +114,7 @@
 
   <div class="flex flex-col lg:flex-row-reverse">
     <div class="lg:w-1/2 flex flex-col items-center justify-center">
-      <%= image_tag "heritage-field-fly-in-event.webp", class: "lg:w-5/6 w-full lg:rounded-2xl", alt: "heritage field fly in event"%>
+      <%= image_tag "heritage-field-fly-in-event.webp", class: "lg:w-5/6 w-full lg:rounded-2xl", alt: "heritage field fly in event", loading: "lazy" %>
     </div>
     <div class="lg:w-1/2 flex flex-col items-center">
       <div class="max-w-xl px-5">
@@ -174,7 +174,7 @@
         <%end%>
     </div>
     <div class="lg:w-1/2 flex flex-col items-center justify-center"> 
-      <%= image_tag "aircraft-for-rent-at-pitcairn-heritage-field-airport-flight-school.webp", alt: "One Cessna at Pitcairn Flight Academy LLC", class: "lg:w-5/6 w-full lg:rounded-2xl"%>
+      <%= image_tag "aircraft-for-rent-at-pitcairn-heritage-field-airport-flight-school.webp", alt: "One Cessna at Pitcairn Flight Academy LLC", class: "lg:w-5/6 w-full lg:rounded-2xl", loading: "lazy" %>
     </div>
   </div>
 </section>
