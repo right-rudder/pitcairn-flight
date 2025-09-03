@@ -2,7 +2,7 @@
 x-data="{ atTop: false }"
 >
 <!--Slide in logo desktop-->
-  <%=link_to root_path do%>
+  <%= link_to root_path, aria: { label: "Go to homepage" } do%>
     <div class="lg:block hidden h-16 w-auto absolute top-0 hover:scale-105
         p-2 transition duration-500 ease-in-out -translate-x-[50vw]"
         :class="{ '-translate-x-[23vw] 2xl:-translate-x-[28vw]': atTop, '-translate-x-[50vw]': !atTop}"
