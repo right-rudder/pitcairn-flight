@@ -65,6 +65,7 @@ gem 'tinymce-rails'
 gem "devise", "~> 4.9"
 gem 'friendly_id', '~> 5.4.0'
 gem 'sitemap_generator', '~> 5.1'
+gem 'rack-attack', require: 'rack/attack'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
