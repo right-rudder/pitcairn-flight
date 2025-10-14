@@ -1,5 +1,6 @@
 class Message < ApplicationRecord
   before_validation :strip_phone_number
+  before_save :sanitize_body
   after_save :to_ghl
   after_save :to_portal
 
@@ -10,6 +11,10 @@ class Message < ApplicationRecord
 
   def strip_phone_number
     self.phone = phone.to_s.gsub(/[-() ]/, "")
+  end
+
+  def sanitize_body
+    self.body = ActionController::Base.helpers.sanitize(self.body, tags: %w(strong em a), attributes: %w(href))
   end
 
   def to_ghl
